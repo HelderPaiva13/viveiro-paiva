@@ -64,7 +64,7 @@ const ProductList = () => {
           <ProductDetails>
           <h3>{product.name}</h3>
           <p>{`R$ ${product.price.toFixed(2)}`}</p>
-          <WhatsAppButton href={`https://wa.me/+5574999843814`} target="_blank">
+          <WhatsAppButton href={`https://wa.me/5574999843814`} target="_blank">
             Whatsapp
           </WhatsAppButton>
           </ProductDetails>
