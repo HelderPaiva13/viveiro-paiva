@@ -1,4 +1,4 @@
-import React from "react";
+
 import styled from "styled-components";
 import  logo  from "../../public/LogoCentral.png";
 const HeaderContainer = styled.header`
