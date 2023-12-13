@@ -5,13 +5,16 @@ import im from "../assets/Barauna.jpeg"
 const ProductListContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   padding: 1rem;
+  gap: 1rem;
+  flex-direction: row;
+  align-content: start;
 `;
 
 const ProductCard = styled.div`
-  width: 45%;
-  margin: 1rem;
+  width: 25%;
+  max-width: 20rem;
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -19,6 +22,11 @@ const ProductCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media only screen and (max-width: 480px) {
+    width: 35%;
+    height: 314px
+  }
 `;
 
 const ProductImage = styled.img`
@@ -54,6 +62,7 @@ const ProductList = () => {
     {id: 1, name: 'Jacarandá', price: 19.99, image: im},
     {id: 2, name: 'Paineira Branca', price: 39.99, image: im},
     {id: 3, name: 'Imbiruçi', price: 15.99, image: im},
+    {id: 3, name: 'Angico', price: 15.99, image: im},
   ];
 
   return (

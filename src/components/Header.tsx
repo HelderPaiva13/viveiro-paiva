@@ -34,6 +34,7 @@ const StyledLink = styled(Link)`
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
+  text-decoration: none;
 
 &:hover {
     background-color: #fff;
