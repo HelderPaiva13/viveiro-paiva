@@ -1,6 +1,7 @@
 
 import styled from "styled-components";
 import  logo  from "../../public/LogoCentral.png";
+import { Link } from "react-router-dom";
 const HeaderContainer = styled.header`
   color: #fff;
   padding: 1rem;
@@ -23,7 +24,7 @@ const Logo = styled.div`
   border-radius: 999px;
 `;
 
-const Button = styled.button`
+const StyledLink = styled(Link)`
   background-color: #008000;
   color: white;
   text-size-adjust: 2rem;
@@ -46,8 +47,8 @@ const Header = ()=> {
   return (
     <HeaderContainer>
       <Nav>
-        <Button>Home</Button>
-        <Button>Curiosidade sobre nós</Button>
+        <StyledLink to='/viveiro-paiva/'>Home</StyledLink>
+        <StyledLink to='/viveiro-paiva/about'>Curiosidade sobre nós</StyledLink>
       </Nav>
       <Logo>
         <img src={logo} alt="" width={'200px'}  />
